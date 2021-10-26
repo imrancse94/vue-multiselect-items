@@ -187,7 +187,6 @@ export default {
 
 <style scoped>
 .checkbox-select .form-control {
-    display: block;
     width: 100%;
     height: calc(2.25rem + 2px);
     padding: .375rem .75rem;
