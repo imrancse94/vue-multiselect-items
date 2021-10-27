@@ -1,3 +1,5 @@
+![alt text](https://github.com/imrancse94/vue-multiselect-items/blob/main/screenshot.png?raw=true)
+
 :earth_africa: Installation
 ---------------------------
 
