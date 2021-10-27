@@ -24,9 +24,9 @@ Vue.component('VueMultiselectItems', VueMultiselectItems)
         label="Fruit List"
         title="Please select"
         placeholder="Search fruits..."
-        :errors="errors.user_id"
+        :errors="errors"
         :data="data"
-        v-model="items"
+        v-model="selecteditems"
       />
    
   </div>
@@ -35,14 +35,14 @@ Vue.component('VueMultiselectItems', VueMultiselectItems)
 <script>
 
   export default {
-      data():{
+      data(){
         return {
             data:[
               {id:1,name:"Apple"},
               {id:2,name:"Banana"},
             ],
             errors:"The field is required.",
-            items:{}
+            selecteditems:[]
         }
       }
   }
