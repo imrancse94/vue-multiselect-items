@@ -15,4 +15,40 @@ import Vue from 'vue'
 import VueMultiselectItems from 'vue-multiselect-items'
 
 Vue.component('VueMultiselectItems', VueMultiselectItems)
+
+### `App.vue`
+
+<template>
+  <div id="app">
+    <VueMultiselectItems
+        label="Fruit List"
+        title="Please select"
+        placeholder="Search fruits..."
+        :errors="errors.user_id"
+        :data="data"
+        v-model="items"
+      />
+   
+  </div>
+</template>
+
+<script>
+
+  export default {
+      data():{
+        return {
+            data:[
+              {id:1,name:"Apple"},
+              {id:2,name:"Banana"},
+            ],
+            errors:"The field is required.",
+            items:{}
+        }
+      }
+  }
+ 
+</script>
 ```
+
+
+
