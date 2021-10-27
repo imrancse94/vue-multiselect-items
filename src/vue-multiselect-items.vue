@@ -20,7 +20,9 @@
           />
         </svg>
       </div>
-      <ErrorValidation v-if="errors" :msg="errors" />
+      <div v-if="errors" class="invalid-feedback">
+        {{errors}}
+      </div> 
       <div
         v-if="Object.keys(data).length === 0"
         id="dropdown"
@@ -200,6 +202,18 @@ export default {
     border-radius: .25rem;
     box-shadow: inset 0 0 0 transparent;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.checkbox-select .invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 16px !important;
+    color: #dc3545;
+}
+
+.checkbox-select .is-invalid~.invalid-feedback{
+  display: block;
 }
 .checkbox-select .showdropdown {
   visibility: inherit;
