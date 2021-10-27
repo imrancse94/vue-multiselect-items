@@ -1,6 +1,6 @@
 {
   "name": "vue-multiselect-items",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/vue-multiselect-items.ssr.js",
   "browser": "dist/vue-multiselect-items.esm.js",
