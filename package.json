@@ -44,5 +44,17 @@
   },
   "engines": {
     "node": ">=12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imrancse94/vue-multiselect-items.git"
+  },
+  "keywords": [
+    "vue-multi-select",
+    "multi-select",
+    "multiple-select",
+    "multi-select-dropdown",
+    "multiple-select-dropdown"
+  ],
+  "author": "Imran Hossain <imrancse94@gmail.com>"
 }
